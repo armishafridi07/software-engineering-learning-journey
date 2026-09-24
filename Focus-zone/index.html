@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Focus Zone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="greeting">Good Evening</h1>
+        <div id="clock">00:00:00</div>
+    </header>
+
+    <main>
+
+        <!-- Todo Section -->
+        <section class="card">
+            <h2>My Tasks</h2>
+
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Enter your task">
+                <button id="addButton">Add</button>
+            </div>
+
+            <p id="taskMessage"></p>
+
+            <ul id="taskList"></ul>
+        </section>
+
+
+        <!-- Timer Section -->
+        <section class="card">
+            <h2>Focus Timer</h2>
+
+            <div id="timer">30:00</div>
+
+            <div class="timer-buttons">
+                <button id="startButton">Start</button>
+                <button id="pauseButton">Pause</button>
+                <button id="resetButton">Reset</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HydraFit Daily Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HydraFit</h1>
+        <p>Daily Health & Habit Tracker</p>
+
+        <button id="themeButton">Dark Mode</button>
+    </header>
+
+
+    <main>
+
+        <!-- Water Section -->
+        <section class="card">
+
+            <h2>Water Intake</h2>
+
+            <p>
+                Goal: 2500 ml
+            </p>
+
+            <p id="waterAmount">0 ml</p>
+
+            <div class="progress-container">
+                <div id="waterProgress"></div>
+            </div>
+
+            <p id="waterPercent">0%</p>
+
+            <p id="goalMessage"></p>
+
+            <div class="buttons">
+                <button id="cupButton">+ 250ml (Cup)</button>
+                <button id="bottleButton">+ 500ml (Bottle)</button>
+                <button id="waterReset">Reset</button>
+            </div>
+
+        </section>
+
+
+        <!-- Habit Section -->
+        <section class="card">
+
+            <h2>Habit Tracker</h2>
+
+            <div class="habit-input">
+
+                <input
+                    type="text"
+                    id="habitInput"
+                    placeholder="Enter a habit"
+                >
+
+                <button id="addHabit">Add Habit</button>
+
+            </div>
+
+            <p id="habitMessage"></p>
+
+            <div id="habitList"></div>
+
+        </section>
+
+
+        <!-- Calories Section -->
+        <section class="card">
+
+            <h2>Calorie Burn</h2>
+
+            <label for="activity">Activity</label>
+
+            <select id="activity">
+
+                <option value="11">Running</option>
+                <option value="8">Cycling</option>
+                <option value="4">Yoga</option>
+
+            </select>
+
+
+            <label for="duration">Duration (minutes)</label>
+
+            <input
+                type="number"
+                id="duration"
+                placeholder="Enter minutes"
+            >
+
+            <button id="calculateButton">
+                Calculate & Add
+            </button>
+
+            <h3>
+                Daily Calories:
+                <span id="calorieTotal">0</span> kcal
+            </h3>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
